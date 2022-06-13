@@ -10,6 +10,8 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.wtk.audiolibrary.controller.AudioRecordController
+import com.wtk.audiolibrary.controller.IAudioRecordController
 import com.wtking.audiobasicknowledge.ui.theme.AudioBasicKnowledgeTheme
 
 class MainActivity : ComponentActivity() {
@@ -24,6 +26,7 @@ class MainActivity : ComponentActivity() {
                 ) {
                     Greeting("Android")
                 }
+               val  audioController = AudioRecordController()
             }
         }
     }
